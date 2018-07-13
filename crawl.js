@@ -8,7 +8,7 @@ let crawlAmazon = async () => {
     await page.type('#twotabsearchtextbox', 'novels');
     await page.click('input.nav-input');
     await page.waitForSelector('#resultsCol');
-    await page.waitFor(5000);
+    await page.waitFor(1000);
 
     const searchBooks = await page.evaluate(() => {
 
@@ -19,21 +19,20 @@ let crawlAmazon = async () => {
         elements.forEach(element => {
             try {
                 let title = element.querySelector('div > div > div > div > div > a[title]').innerText; //Get the book title
-                // let authorContainer = element.querySelector('a-size-small a-color-secondary');
-                // let author = authorContainer.querySelector('a.a-link-normal.a-text-normal').innerText; //Get the author
-                let currency = element.querySelector('sup.sx-price-currency').innerText;
+                let author = element.querySelector('div > div > div > div > div > div > span > a.a-link-normal.a-text-normal').innerText; //Get the author
+                let currency = element.querySelector('sup.sx-price-currency').innerText; //Get the currency type
                 let price = element.querySelector('span.sx-price-whole').innerText; // Get the price
-                let fractNum = document.querySelector('sup.sx-price-fractional').innerText;
-                // let publishedDate = document.querySelector('li > div > div > div > div > div > div > span.a-size-small a-color-secondary').innerText;
-
+                let fractNum = document.querySelector('sup.sx-price-fractional').innerText; //Get the cents
+                let bookType = document.querySelector('div > div > div > div > div > div > div > a > h3[data-attribute]').innerText; //Get book type
                 let total = currency + price + '.' + fractNum;
+               
 
                 bookData.push({
                     book: {
                         title,
-                        // author,
+                        author,
                         total,
-                        // publishedDate
+                        bookType   
                     }
             
                 }); // Push an object with the data into our array
