@@ -28,33 +28,41 @@ let crawlAmazon = async () => {
     //Telling puppeteer to evaluate the page, beginning of actual of scrape logic. 
     const searchBooks = await page.evaluate(() => {
 
-        let bookData = []; // Create an empty array that will store data
-        let elements = document.querySelectorAll('.s-result-item'); // Select all book results
+        // Create an empty array that will store data
+        let bookData = []; 
+
+        // Select all book results
+        let elements = document.querySelectorAll('.s-result-item'); 
 
         //Loop through the results 
         elements.forEach(element => {
             try {
-                let title = element.querySelector('div > div > div > div > div > a[title]').innerText; //Get the book title
-                let author = element.querySelector('div > div > div > div > div > div > span > a.a-link-normal.a-text-normal').innerText; //Get the author
-                let currency = element.querySelector('sup.sx-price-currency').innerText; //Get the currency type
-                let price = element.querySelector('span.sx-price-whole').innerText; // Get the price
-                let fractNum = document.querySelector('sup.sx-price-fractional').innerText; //Get the cents
-                let bookType = document.querySelector('div > div > div > div > div > div > div > a > h3[data-attribute]').innerText; //Get book type
-                let total = currency + price + '.' + fractNum; //Adding all together into one variable to put in the object
-                // let url = document.querySelector('.a-link-normal.a-text-normal > [href]').innerText;
-
-
+               
+                //Get the book title
+                let title = element.querySelector('div > div > div > div > div > a[title]').innerText; 
+                //Get the author
+                let author = element.querySelector('div > div > div > div > div > div > span > a.a-link-normal.a-text-normal').innerText; 
+                //Get the currency type
+                let currency = element.querySelector('sup.sx-price-currency').innerText; 
+                // Get the price
+                let price = element.querySelector('span.sx-price-whole').innerText; 
+                //Get the cents
+                let fractNum = document.querySelector('sup.sx-price-fractional').innerText;
+                //Get book type
+                let bookType = document.querySelector('div > div > div > div > div > div > div > a > h3[data-attribute]').innerText; 
+                //Adding all together into one variable to put in the object
+                let total = currency + price + '.' + fractNum; 
+                
+                // Push an object with the data into book array
                 bookData.push({
                     book: {
-                        
                         title,
                         author,
                         total,
-                        bookType,
-                        // url
+                        bookType
                     }
 
-                }); // Push an object with the data into book array
+                }); 
             }
             catch (err) {
                 console.error(err);
