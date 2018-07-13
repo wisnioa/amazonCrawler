@@ -1,17 +1,17 @@
 [
   {
     "book": {
-      "title": "[Sponsored]Merciless Charity: A Charity Styles Novel (Caribbean Thriller Series Book 1)",
-      "author": "Wayne Stinnett",
-      "total": "$2.99",
+      "title": "[Sponsored]Sweet Tea: A Novel",
+      "author": "Wendy Lynn Decker",
+      "total": "$4.99",
       "bookType": "Paperback"
     }
   },
   {
     "book": {
-      "title": "[Sponsored]Suicide Forest: A horror mystery novel (World's Scariest Places Book 1)",
-      "author": "World's Scariest Places Occult & Supernatural Crime Series Series",
-      "total": "$3.99",
+      "title": "[Sponsored]Gilchrist: A Novel",
+      "author": "Christian Galacar",
+      "total": "$4.99",
       "bookType": "Paperback"
     }
   },
@@ -33,9 +33,25 @@
   },
   {
     "book": {
+      "title": "The Secret Keeper: A Novel",
+      "author": "Kate Morton",
+      "total": "$9.99",
+      "bookType": "Paperback"
+    }
+  },
+  {
+    "book": {
       "title": "The Outsider: A Novel",
       "author": "Stephen King",
       "total": "$14.99",
+      "bookType": "Paperback"
+    }
+  },
+  {
+    "book": {
+      "title": "The Girl Who Came Home: A Novel of the Titanic (P.S.)",
+      "author": "Hazel Gaynor",
+      "total": "$11.99",
       "bookType": "Paperback"
     }
   },
@@ -49,9 +65,9 @@
   },
   {
     "book": {
-      "title": "The Address: A Novel",
-      "author": "Fiona Davis",
-      "total": "$16.99",
+      "title": "The Red Coat - A Novel of Boston",
+      "author": "Dolley Carlson",
+      "total": "$15.99",
       "bookType": "Paperback"
     }
   },
@@ -73,9 +89,9 @@
   },
   {
     "book": {
-      "title": "My Notorious Life: A Novel",
-      "author": "Kate Manning",
-      "total": "$9.99",
+      "title": "Cottage by the Sea: A Novel",
+      "author": "Debbie Macomber",
+      "total": "$17.99",
       "bookType": "Paperback"
     }
   },
@@ -89,9 +105,9 @@
   },
   {
     "book": {
-      "title": "The Secret Keeper: A Novel",
-      "author": "Kate Morton",
-      "total": "$9.99",
+      "title": "Beneath a Scarlet Sky: A Novel",
+      "author": "Mark Sullivan",
+      "total": "$8.99",
       "bookType": "Paperback"
     }
   },
@@ -105,6 +121,14 @@
   },
   {
     "book": {
+      "title": "Matterhorn: A Novel of the Vietnam War",
+      "author": "Karl Marlantes",
+      "total": "$12.99",
+      "bookType": "Paperback"
+    }
+  },
+  {
+    "book": {
       "title": "Shelter in Place",
       "author": "Nora Roberts",
       "total": "$14.99",
@@ -113,33 +137,9 @@
   },
   {
     "book": {
-      "title": "Before We Were Yours: A Novel",
-      "author": "Lisa Wingate",
-      "total": "$12.99",
-      "bookType": "Paperback"
-    }
-  },
-  {
-    "book": {
-      "title": "Spymaster: A Thriller (The Scot Harvath Series Book 18)",
-      "author": "Brad Thor",
-      "total": "$14.99",
-      "bookType": "Paperback"
-    }
-  },
-  {
-    "book": {
-      "title": "The Guernsey Literary and Potato Peel Pie Society",
-      "author": "Mary Ann Shaffer",
-      "total": "$9.99",
-      "bookType": "Paperback"
-    }
-  },
-  {
-    "book": {
-      "title": "When Life Gives You Lululemons",
-      "author": "Lauren Weisberger",
-      "total": "$12.99",
+      "title": "And After the Fire: A Novel",
+      "author": "Lauren Belfer",
+      "total": "$10.99",
       "bookType": "Paperback"
     }
   }
