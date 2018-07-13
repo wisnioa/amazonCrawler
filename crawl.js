@@ -34,10 +34,12 @@ let crawlAmazon = async () => {
         // Select all book results
         let elements = document.querySelectorAll('.s-result-item'); 
 
+        let id = 0;
         //Loop through the results 
         elements.forEach(element => {
             try {
                
+                id++
                 //Get the book title
                 let title = element.querySelector('div > div > div > div > div > a[title]').innerText; 
                 //Get the author
@@ -56,6 +58,7 @@ let crawlAmazon = async () => {
                 // Push an object with the data into book array
                 bookData.push({
                     book: {
+                        id,
                         title,
                         author,
                         total,

@@ -1,6 +1,7 @@
 [
   {
     "book": {
+      "id": 1,
       "title": "[Sponsored]Sweet Tea: A Novel",
       "author": "Wendy Lynn Decker",
       "total": "$4.99",
@@ -9,6 +10,7 @@
   },
   {
     "book": {
+      "id": 2,
       "title": "[Sponsored]The Family Tabor: A Novel",
       "author": "Cherise Wolas",
       "total": "$27.99",
@@ -17,6 +19,7 @@
   },
   {
     "book": {
+      "id": 3,
       "title": "Crazy Little Thing (A Bell Harbor Novel)",
       "author": "Tracy Brogan",
       "total": "$5.99",
@@ -25,6 +28,7 @@
   },
   {
     "book": {
+      "id": 4,
       "title": "The President Is Missing: A Novel",
       "author": "James Patterson",
       "total": "$14.99",
@@ -33,6 +37,7 @@
   },
   {
     "book": {
+      "id": 5,
       "title": "The Secret Keeper: A Novel",
       "author": "Kate Morton",
       "total": "$9.99",
@@ -41,6 +46,7 @@
   },
   {
     "book": {
+      "id": 6,
       "title": "The Outsider: A Novel",
       "author": "Stephen King",
       "total": "$14.99",
@@ -49,6 +55,7 @@
   },
   {
     "book": {
+      "id": 7,
       "title": "The Girl Who Came Home: A Novel of the Titanic (P.S.)",
       "author": "Hazel Gaynor",
       "total": "$11.99",
@@ -57,6 +64,7 @@
   },
   {
     "book": {
+      "id": 8,
       "title": "The Perfect Couple",
       "author": "Elin Hilderbrand",
       "total": "$14.99",
@@ -65,6 +73,7 @@
   },
   {
     "book": {
+      "id": 9,
       "title": "The Red Coat - A Novel of Boston",
       "author": "Dolley Carlson",
       "total": "$15.99",
@@ -73,6 +82,7 @@
   },
   {
     "book": {
+      "id": 10,
       "title": "All We Ever Wanted: A Novel",
       "author": "Emily Giffin",
       "total": "$14.99",
@@ -81,6 +91,7 @@
   },
   {
     "book": {
+      "id": 13,
       "title": "The Fallen (Memory Man series)",
       "author": "David Baldacci",
       "total": "$14.99",
@@ -89,6 +100,7 @@
   },
   {
     "book": {
+      "id": 14,
       "title": "Cottage by the Sea: A Novel",
       "author": "Debbie Macomber",
       "total": "$17.99",
@@ -97,6 +109,7 @@
   },
   {
     "book": {
+      "id": 15,
       "title": "Little Fires Everywhere",
       "author": "Celeste Ng",
       "total": "$13.99",
@@ -105,22 +118,7 @@
   },
   {
     "book": {
-      "title": "Beneath a Scarlet Sky: A Novel",
-      "author": "Mark Sullivan",
-      "total": "$8.99",
-      "bookType": "Hardcover"
-    }
-  },
-  {
-    "book": {
-      "title": "The Great Alone: A Novel",
-      "author": "Kristin Hannah",
-      "total": "$14.99",
-      "bookType": "Hardcover"
-    }
-  },
-  {
-    "book": {
+      "id": 16,
       "title": "Matterhorn: A Novel of the Vietnam War",
       "author": "Karl Marlantes",
       "total": "$12.99",
@@ -129,6 +127,25 @@
   },
   {
     "book": {
+      "id": 17,
+      "title": "The Great Alone: A Novel",
+      "author": "Kristin Hannah",
+      "total": "$14.99",
+      "bookType": "Hardcover"
+    }
+  },
+  {
+    "book": {
+      "id": 18,
+      "title": "And After the Fire: A Novel",
+      "author": "Lauren Belfer",
+      "total": "$10.99",
+      "bookType": "Hardcover"
+    }
+  },
+  {
+    "book": {
+      "id": 19,
       "title": "Shelter in Place",
       "author": "Nora Roberts",
       "total": "$14.99",
@@ -137,9 +154,10 @@
   },
   {
     "book": {
-      "title": "And After the Fire: A Novel",
-      "author": "Lauren Belfer",
-      "total": "$10.99",
+      "id": 20,
+      "title": "My Dear Hamilton: A Novel of Eliza Schuyler Hamilton",
+      "author": "Stephanie Dray",
+      "total": "$12.99",
       "bookType": "Hardcover"
     }
   }
