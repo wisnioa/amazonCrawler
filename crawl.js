@@ -23,7 +23,7 @@ let crawlAmazon = async () => {
     await page.waitForSelector('#resultsCol');
 
 
-    await page.waitFor(1000);
+    await page.waitFor(3000);
 
     //Telling puppeteer to evaluate the page, beginning of actual of scrape logic. 
     const searchBooks = await page.evaluate(() => {

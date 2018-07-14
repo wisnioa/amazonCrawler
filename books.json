@@ -91,15 +91,6 @@
   },
   {
     "book": {
-      "id": 11,
-      "title": "[Sponsored]Pachinko (National Book Award Finalist)",
-      "author": "Min Jin Lee",
-      "total": "$9.99",
-      "bookType": "Hardcover"
-    }
-  },
-  {
-    "book": {
       "id": 13,
       "title": "Spymaster: A Thriller (The Scot Harvath Series Book 18)",
       "author": "Brad Thor",
