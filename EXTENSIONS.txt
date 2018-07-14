@@ -1,10 +1,46 @@
-For my application to handle other domains besides Amazon, I would create an array of URLs to crawl and loop through them. 
 
-example: 
+To handle other domains besides Amazon, you could put each URL in an array, and then loop over them. Within the loop, you could make each URL
+of the URLs await a new URL link. However, assuming different domains will have different selector tags, I believe that there would need to be
+some switch statements so the correct selectors can be used and the correct data can be returned from each desired page. 
 
-const urls = [URL1, URL2, URL3];
+Pseudocoded example: 
 
-urls.forEach(url => {
-    await page.goto(`${url}`);
-    await page.waitForNavigation({ waitUntil: 'networkidle' });
-});
+const URLs = ['url1', 'url2', 'url3'];
+
+for(let URL of URLs){
+    
+
+        switch (URL) {
+
+            case url1: 
+                //correct selectors, etc for domain 1
+                 await.page.goto(URL);
+
+
+            case url2:
+                //correct selectors, etc for domain 2
+                 await.page.goto(URL);
+
+
+            case url3:
+                //correct selectors, etc for domain 3
+                await.page.goto(URL);
+
+    }
+
+}
+
+
+My application could be amended for different products. In the case of Amazon, the tags for the search bar and its corresponding search button 
+are the same on every page. Using Puppeteer's page clicks and search commands, we could search for different products. So after one product search,
+you can navigate via code back to search bar and continue a new search.
+
+await page.type('#twotabsearchtextbox', 'movies');
+
+    //Clicking the search button
+await page.click('input.nav-input');
+
+    //Waiting for the resultsCol ID to show up 
+await page.waitForSelector('#resultsCol');
+
+
