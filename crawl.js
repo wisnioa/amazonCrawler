@@ -36,7 +36,7 @@ let crawlAmazon = async () => {
 
         let id = 0;
         //Loop through the results 
-        elements.forEach(element => {
+        for (let element of elements) {
             try {
                
                 id++
@@ -70,7 +70,7 @@ let crawlAmazon = async () => {
             catch (err) {
                 console.error(err);
             }
-        })
+        }
         // Return book data array  
         return JSON.stringify(bookData, null, 2);
     });

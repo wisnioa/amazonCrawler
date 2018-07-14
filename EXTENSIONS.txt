@@ -1,0 +1,10 @@
+For my application to handle other domains besides Amazon, I would create an array of URLs to crawl and loop through them. 
+
+example: 
+
+const urls = [URL1, URL2, URL3];
+
+urls.forEach(url => {
+    await page.goto(`${url}`);
+    await page.waitForNavigation({ waitUntil: 'networkidle' });
+});
